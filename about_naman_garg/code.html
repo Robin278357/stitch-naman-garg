@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About | Naman Garg</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-secondary": "#ffffff",
+                "on-tertiary-fixed-variant": "#3d4756",
+                "error-container": "#ffdad6",
+                "on-error": "#ffffff",
+                "on-primary-container": "#848484",
+                "background": "#f8f9fa",
+                "on-tertiary-container": "#7a8495",
+                "surface-dim": "#d9dadb",
+                "primary-fixed": "#e2e2e2",
+                "surface-bright": "#f8f9fa",
+                "outline-variant": "#cfc4c5",
+                "error": "#ba1a1a",
+                "on-tertiary": "#ffffff",
+                "on-primary-fixed-variant": "#474747",
+                "inverse-surface": "#2e3132",
+                "surface-container": "#edeeef",
+                "tertiary-fixed-dim": "#bdc7d9",
+                "outline": "#7e7576",
+                "surface": "#f8f9fa",
+                "surface-variant": "#e1e3e4",
+                "tertiary": "#000000",
+                "surface-container-low": "#f3f4f5",
+                "on-surface-variant": "#4c4546",
+                "secondary": "#7a5900",
+                "on-primary-fixed": "#1b1b1b",
+                "tertiary-fixed": "#d9e3f6",
+                "on-background": "#191c1d",
+                "primary": "#000000",
+                "on-tertiary-fixed": "#121c2a",
+                "on-surface": "#191c1d",
+                "on-secondary-container": "#6f5100",
+                "secondary-fixed": "#ffdea1",
+                "primary-fixed-dim": "#c6c6c6",
+                "inverse-on-surface": "#f0f1f2",
+                "on-secondary-fixed": "#261900",
+                "surface-container-high": "#e7e8e9",
+                "primary-container": "#1b1b1b",
+                "surface-container-highest": "#e1e3e4",
+                "tertiary-container": "#121c2a",
+                "inverse-primary": "#c6c6c6",
+                "surface-tint": "#5e5e5e",
+                "on-error-container": "#93000a",
+                "on-secondary-fixed-variant": "#5c4300",
+                "secondary-container": "#ffc334",
+                "on-primary": "#ffffff",
+                "secondary-fixed-dim": "#f9bd2e",
+                "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "gutter": "24px",
+                "margin-desktop": "40px",
+                "section-gap": "8rem",
+                "margin-mobile": "20px",
+                "stack-gap": "1.5rem",
+                "container-max": "1120px"
+            },
+            "fontFamily": {
+                "headline-lg": ["Manrope"],
+                "body-md": ["Newsreader"],
+                "body-lg": ["Newsreader"],
+                "headline-md": ["Manrope"],
+                "headline-lg-mobile": ["Manrope"],
+                "label-sm": ["Inter"],
+                "headline-xl": ["Manrope"],
+                "label-md": ["Inter"]
+            },
+            "fontSize": {
+                "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                "body-md": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "body-lg": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #f8f9fa; color: #191c1d; -webkit-font-smoothing: antialiased; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .editorial-underline { position: relative; }
+        .editorial-underline::after { content: ''; position: absolute; bottom: 2px; left: 0; width: 100%; height: 2px; background-color: #ECB221; opacity: 0.3; transition: opacity 0.2s; }
+        .editorial-underline:hover::after { opacity: 1; }
+        .ambient-card { transition: all 0.3s ease; border: 1px solid #F1F5F9; background: #ffffff; }
+        .ambient-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.04); transform: translateY(-2px); }
+    </style>
+</head>
+<body class="font-body-md">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-desktop h-20 max-w-container-max mx-auto bg-surface dark:bg-background">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-on-background">Naman Garg</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-secondary transition-colors duration-200 font-label-md text-label-md" href="#">Home</a>
+<a class="text-primary dark:text-on-background font-bold border-b-2 border-secondary hover:text-secondary transition-colors duration-200 font-label-md text-label-md" href="#">About</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-secondary transition-colors duration-200 font-label-md text-label-md" href="#">Services</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-secondary transition-colors duration-200 font-label-md text-label-md" href="#">Daily Blogs</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-secondary transition-colors duration-200 font-label-md text-label-md" href="#">Weekly Blogs</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-secondary transition-colors duration-200 font-label-md text-label-md" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer" data-icon="search">search</span>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:opacity-80 active:scale-95 transition-all">Categories</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-32 pb-section-gap max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center mb-section-gap">
+<div class="md:col-span-7">
+<span class="font-label-md text-label-md text-secondary tracking-widest uppercase mb-4 block">Personal Narrative</span>
+<h1 class="font-headline-xl text-headline-xl mb-8">Crafting a life of <span class="italic font-body-lg text-primary">intentionality</span> and quiet growth.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-8">
+                    I am Naman Garg—a seeker of patterns, a student of health, and a believer in the power of honest reflection. My journey isn't just about what I do, but how I choose to see the world.
+                </p>
+</div>
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden rounded-xl">
+<img alt="Naman Garg Profile" class="w-full h-full object-cover" data-alt="A cinematic, high-key portrait of a young professional man with a thoughtful expression, set against a soft-focus minimalist architectural background. The lighting is bright and natural, reflecting a modern light-mode aesthetic with clean lines and a premium editorial feel. He is wearing a simple black turtleneck, emphasizing a minimalist and sophisticated personal brand style. The atmosphere is calm, quiet, and deeply reflective." src="https://lh3.googleusercontent.com/aida-public/AB6AXuATA2g_ZazmduPnH-KBQht0jOhhm-l6V3hOWiA56oGLoT4RvJLAnEFhLwbzXRG3lxUsWXScSp5AJkCKjL76aKJK1kmYTrGTlDe9UfsT3x0DHAmfCFNKT4crYngbrnV1-0cMprPtRmET2LFP0p8JlNHjftKIoMPJ2isWUGVji0JeNIrq7yjSy19RGucZOyOpZM1Vbu1dC7laOyFLDKLwEW8qLPihd_W9enn0hp7aFVMWXqXSRw5g1XAh-F8MEMldQKELXMi_AcDVEA"/>
+</div>
+</div>
+</section>
+<!-- Signature Reflection Component -->
+<section class="max-w-[720px] mx-auto text-center mb-section-gap py-16">
+<span class="material-symbols-outlined text-secondary text-6xl mb-6 opacity-30" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<h2 class="font-body-lg text-headline-md italic mb-6 leading-relaxed">
+                Have you ever felt like the world moves too fast for the things that actually matter? I spend my days trying to slow down the frame-rate of life, focusing on health, deep work, and the books that change who we are.
+            </h2>
+<div class="w-12 h-1 bg-secondary mx-auto rounded-full"></div>
+</section>
+<!-- Bento Grid: The Pillars of Life -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-section-gap">
+<!-- Health Pillar -->
+<div class="md:col-span-2 ambient-card p-10 rounded-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-secondary" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Foundation</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-4">Vitality &amp; Health</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        True productivity is a byproduct of physical clarity. I document my experiments with nutrition, movement, and sleep—not as a fitness guru, but as a practitioner seeking sustainable energy for the long game.
+                    </p>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-low px-4 py-1 rounded-full font-label-sm text-label-sm uppercase">Longevity</span>
+<span class="bg-surface-container-low px-4 py-1 rounded-full font-label-sm text-label-sm uppercase">Mindfulness</span>
+<span class="bg-surface-container-low px-4 py-1 rounded-full font-label-sm text-label-sm uppercase">Bio-Optimization</span>
+</div>
+</div>
+<!-- Books Pillar -->
+<div class="md:col-span-1 bg-primary text-on-primary p-10 rounded-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-secondary" data-icon="menu_book">menu_book</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-primary-container">Knowledge</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-4 text-white">The Library</h3>
+<p class="font-label-md text-label-md text-on-primary-container mb-6 leading-relaxed">
+                        I believe we are the average of the five books we most recently internalizing. My reading list is a mix of timeless philosophy and modern strategy.
+                    </p>
+</div>
+<a class="text-white editorial-underline inline-flex items-center gap-2 font-label-md text-label-md" href="#">
+                    View Reading List <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Work/Motivation Pillar -->
+<div class="md:col-span-1 ambient-card p-10 rounded-xl">
+<span class="material-symbols-outlined text-secondary mb-4" data-icon="psychology">psychology</span>
+<h3 class="font-headline-md text-headline-md mb-4">Work &amp; Motivation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Deep work is the superpower of the 21st century. I strive to build systems that protect focus and foster genuine creation over mindless consumption.
+                </p>
+</div>
+<!-- Honest Reflections Pillar -->
+<div class="md:col-span-2 ambient-card p-10 rounded-xl bg-[url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&amp;w=2070&amp;auto=format&amp;fit=crop')] bg-cover bg-center relative overflow-hidden group" data-alt="A minimalist workspace with a single open notebook, a high-quality pen, and a cup of black coffee on a white oak desk. The background is softly blurred with warm morning light streaming through a window. The overall aesthetic is clean, premium, and focused on personal reflection. The image uses a monochromatic palette with warm wood tones and soft grays, matching a sophisticated light-mode design.">
+<div class="absolute inset-0 bg-white/90 group-hover:bg-white/80 transition-colors duration-500"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-secondary mb-4" data-icon="edit_note">edit_note</span>
+<h3 class="font-headline-lg text-headline-lg mb-4">Honest Reflections</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+                        This is my corner of the internet for unpolished thoughts. I write about the struggles of maintaining discipline, the joy of small observations, and the vulnerability of constant learning.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Values Section -->
+<section class="max-w-[720px] mx-auto mb-section-gap">
+<h2 class="font-headline-lg text-headline-lg mb-12 text-center">My Operating System</h2>
+<div class="space-y-12">
+<div class="flex gap-8 group">
+<div class="text-headline-md font-bold text-outline-variant group-hover:text-secondary transition-colors duration-300">01</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-2">Curiosity over Certainty</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">I’d rather be wrong and learning than right and stagnant. Every experience is a data point in the larger experiment of life.</p>
+</div>
+</div>
+<div class="flex gap-8 group">
+<div class="text-headline-md font-bold text-outline-variant group-hover:text-secondary transition-colors duration-300">02</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-2">Quality over Scale</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Whether it's the work I produce or the connections I foster, I optimize for depth and resonance over wide, shallow reach.</p>
+</div>
+</div>
+<div class="flex gap-8 group">
+<div class="text-headline-md font-bold text-outline-variant group-hover:text-secondary transition-colors duration-300">03</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-2">Radical Honesty</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Reflection requires the courage to look at one’s own flaws without blinking. I try to bring that same honesty to my writing.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-surface-container-high rounded-2xl p-12 text-center">
+<h2 class="font-headline-lg text-headline-lg mb-6">Let's start a conversation.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-10 max-w-xl mx-auto">
+                Whether you have a question about my blogs, want to discuss a book, or just want to share a reflection—my door is always open.
+            </p>
+<div class="flex flex-col md:flex-row justify-center gap-4">
+<button class="bg-primary text-white px-10 py-4 rounded-lg font-label-md text-label-md hover:opacity-90 transition-all">Get in Touch</button>
+<button class="bg-white border border-outline-variant px-10 py-4 rounded-lg font-label-md text-label-md hover:bg-surface-container transition-all">Download Media Kit</button>
+</div>
+</section>
+</main>
+<!-- Floating Elements -->
+<div class="fixed bottom-10 right-10 z-50 flex flex-col gap-4">
+<!-- WhatsApp Floating Button -->
+<a class="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform" href="#">
+<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.438 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+</a>
+<!-- Scroll to Top -->
+<button class="w-14 h-14 bg-white border border-outline-variant text-primary rounded-full flex items-center justify-center shadow-lg hover:bg-surface-container transition-colors" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+<span class="material-symbols-outlined">arrow_upward</span>
+</button>
+</div>
+<!-- Footer -->
+<footer class="w-full py-16 px-margin-desktop flex flex-col md:flex-row justify-between items-start gap-stack-gap bg-surface-container-low dark:bg-surface-container-highest">
+<div class="flex flex-col gap-6 max-w-md">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-on-background">Naman Garg</div>
+<p class="font-body-md text-body-md text-on-surface-variant">A digital space dedicated to the art of living well, working deep, and reflecting often. Join the journey of intentional growth.</p>
+<div class="font-label-sm text-label-sm text-on-surface-variant">© 2024 Naman Garg. All rights reserved.</div>
+</div>
+<div class="grid grid-cols-2 gap-16">
+<div class="flex flex-col gap-4">
+<span class="font-label-md text-label-md font-bold text-primary mb-2">Navigation</span>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors underline decoration-secondary decoration-2" href="#">Home</a>
+<a class="font-label-sm text-label-sm text-secondary font-semibold" href="#">About</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Services</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Daily Blogs</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-md text-label-md font-bold text-primary mb-2">Connect</span>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Twitter</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Newsletter</a>
+</div>
+</div>
+</footer>
+</body></html>

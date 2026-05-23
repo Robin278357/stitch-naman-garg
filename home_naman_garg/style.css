@@ -1,0 +1,49 @@
+/* Hero Section */
+.naman {
+  min-height: 80vh;
+  padding: 80px 40px;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.20),
+      rgba(255, 255, 255, 0.20)
+    ),
+    url("naman.jpeg");
+
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+/* Hero content box */
+.naman > div {
+  max-width: 600px;
+  padding: 40px;
+}
+
+/* Hero heading */
+.naman h1 {
+  color: black;
+}
+
+/* Hero paragraph */
+.naman p {
+  color: #222;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .naman {
+    min-height: 90vh;
+    padding: 60px 20px;
+    background-position: center;
+  }
+
+  .naman h1 {
+    font-size: 36px;
+  }
+}

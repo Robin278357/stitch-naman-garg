@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blog Detail | Naman Garg</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&amp;family=Newsreader:opsz,wght@6..72,400;500&amp;family=Inter:wght@500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#3d4756",
+                        "error-container": "#ffdad6",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#848484",
+                        "background": "#f8f9fa",
+                        "on-tertiary-container": "#7a8495",
+                        "surface-dim": "#d9dadb",
+                        "primary-fixed": "#e2e2e2",
+                        "surface-bright": "#f8f9fa",
+                        "outline-variant": "#cfc4c5",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#474747",
+                        "inverse-surface": "#2e3132",
+                        "surface-container": "#edeeef",
+                        "tertiary-fixed-dim": "#bdc7d9",
+                        "outline": "#7e7576",
+                        "surface": "#f8f9fa",
+                        "surface-variant": "#e1e3e4",
+                        "tertiary": "#000000",
+                        "surface-container-low": "#f3f4f5",
+                        "on-surface-variant": "#4c4546",
+                        "secondary": "#7a5900",
+                        "on-primary-fixed": "#1b1b1b",
+                        "tertiary-fixed": "#d9e3f6",
+                        "on-background": "#191c1d",
+                        "primary": "#000000",
+                        "on-tertiary-fixed": "#121c2a",
+                        "on-surface": "#191c1d",
+                        "on-secondary-container": "#6f5100",
+                        "secondary-fixed": "#ffdea1",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-secondary-fixed": "#261900",
+                        "surface-container-high": "#e7e8e9",
+                        "primary-container": "#1b1b1b",
+                        "surface-container-highest": "#e1e3e4",
+                        "tertiary-container": "#121c2a",
+                        "inverse-primary": "#c6c6c6",
+                        "surface-tint": "#5e5e5e",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "secondary-container": "#ffc334",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#f9bd2e",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-desktop": "40px",
+                        "section-gap": "8rem",
+                        "margin-mobile": "20px",
+                        "stack-gap": "1.5rem",
+                        "container-max": "1120px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Manrope"],
+                        "body-md": ["Newsreader"],
+                        "body-lg": ["Newsreader"],
+                        "headline-md": ["Manrope"],
+                        "headline-lg-mobile": ["Manrope"],
+                        "label-sm": ["Inter"],
+                        "headline-xl": ["Manrope"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-md": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .blog-content p { margin-bottom: 2rem; }
+        .blog-content h2 { margin-top: 3rem; margin-bottom: 1.5rem; font-family: 'Manrope'; font-weight: 700; font-size: 24px; }
+        .accent-underline {
+            position: relative;
+        }
+        .accent-underline::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #ECB221;
+            opacity: 0.3;
+            transition: opacity 0.2s ease;
+        }
+        .accent-underline:hover::after {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-desktop h-20 max-w-container-max mx-auto bg-surface dark:bg-background">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-on-background">Naman Garg</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 font-label-md text-label-md" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 font-label-md text-label-md" href="#">About</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 font-label-md text-label-md" href="#">Services</a>
+<a class="text-primary dark:text-on-background font-bold border-b-2 border-secondary font-label-md text-label-md" href="#">Daily Blogs</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 font-label-md text-label-md" href="#">Weekly Blogs</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 font-label-md text-label-md" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer">search</span>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:opacity-90 transition-all">Categories</button>
+</div>
+</header>
+<main class="pt-32 pb-section-gap">
+<article class="max-w-[720px] mx-auto px-margin-mobile md:px-0">
+<header class="mb-12">
+<div class="flex items-center gap-4 mb-6">
+<span class="bg-secondary-fixed/30 text-on-secondary-fixed px-3 py-1 rounded-full font-label-sm text-label-sm tracking-wider uppercase">Philosophy</span>
+<time class="text-on-surface-variant font-label-md text-label-md">October 24, 2024</time>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary mb-6 leading-tight">The Quiet Resonance of Intentional Architecture.</h1>
+<div class="flex items-center gap-3 py-4 border-y border-outline-variant/30">
+<div class="w-10 h-10 rounded-full bg-primary-fixed overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional portrait of Naman Garg, a thoughtful man in his early 30s with a warm but serious expression. He is wearing a minimalist dark sweater, set against a softly blurred studio background with warm, natural side-lighting that highlights facial contours. The image reflects a sense of intellectual depth and personal reflection, consistent with a premium editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj6fBqcWHAyzJPZgAs8NcdSJDzP7rrW-4yACmQbwfeUDXJARhfsCKxT721C6LqOgsh2WZsoxyXd9n1bd8HXPHVvKu6fixh168SSwjb-4ivSi4SVUjkyjRw9NT7F73CjG8QestSGTvMwh1tyVnBbrUcqrob9Yn9efEarbVWiGAbe96iN_mIh8e7onmJnQ8VQt6jiG0gcF-0xdLg9T4OEHQgFfRaCi7k7irHNFmBJouf3f789b8ig-ZxhV67X78C6Oiqn6JJEevmyw"/>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary">Naman Garg</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Author &amp; Designer</p>
+</div>
+</div>
+</header>
+<figure class="mb-12 -mx-margin-mobile md:-mx-16">
+<img class="w-full h-auto rounded-xl shadow-sm" data-alt="A serene, minimalist interior featuring a single designer chair placed next to a tall window where soft afternoon light creates dramatic long shadows on a pristine white floor. The walls are a pale gray, and the overall composition is balanced and quiet, evoking a sense of calm and deep contemplation. The lighting is natural and high-key, aligning with the premium editorial aesthetic of the blog." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs80ZUQyPpW1CESBI51G0c3W7O9YuF-VXrOyoMMXUqV8enYBChO9Et7jfGYvwCHARaxwuEmt3LY06oT2bD_g1byZTk_5XGIJQqu65UjxlnjbVOVoYHz9_iPZn9J1FUjlIrXK7LxlZccvERIZ531pNrb8W--BYtBfnJwYMyOQ3LLGzCih_MgV1HMY0ksHyvGZ8iyhSfnjab3DsgZeZEnS3J1aPS2fNHYppetgkZH4H10EtKkOE4A5O4BKL1cJyKop2jL5PPqwDZxQ"/>
+<figcaption class="mt-4 text-center text-on-surface-variant font-body-md italic text-sm opacity-70">The beauty of empty space in modern design.</figcaption>
+</figure>
+<div class="blog-content font-body-lg text-body-lg text-on-surface leading-relaxed">
+<div class="mb-12 border-l-4 border-secondary pl-8 py-2 italic font-body-lg text-primary bg-surface-container-low/50">
+<span class="material-symbols-outlined text-secondary text-4xl block mb-2" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="text-2xl">Have you ever felt like the spaces we inhabit are speaking to us in a language we’ve forgotten how to hear?</p>
+</div>
+<p>Architecture is often viewed as a purely functional endeavor—a means to provide shelter and facilitate activity. However, when we peel back the layers of utility, we find that the most profound structures are those that resonate with our internal silence. Intentional architecture isn't just about the arrangement of glass and steel; it's about the curation of light, air, and the pauses between rooms.</p>
+<h2>The Geometry of Stillness</h2>
+<p>Consider the way a room feels when it is stripped of unnecessary ornamentation. There is a weight to the emptiness that is not heavy, but rather grounding. In my recent travels through northern Europe, I encountered spaces that championed this <a class="accent-underline" href="#">minimalist philosophy</a> not as a trend, but as a way of being. They invite the inhabitant to slow down, to notice the shift of shadows across a plastered wall, and to breathe in sync with the environment.</p>
+<p>When we design for stillness, we are essentially designing for the human soul. The clutter of the modern world demands our constant attention, but a well-designed space offers a sanctuary where that attention can finally rest. It is in these moments of visual and spatial quietude that our most creative and reflective thoughts are born.</p>
+<p>The intentionality behind every line and every choice of material acts as a silent dialogue between the creator and the observer. It's a reminder that even in a world that values speed and volume, there is immense power in the quiet and the slow.</p>
+</div>
+<footer class="mt-16 pt-8 border-t border-outline-variant/30">
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-high px-4 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:bg-primary hover:text-on-primary transition-colors cursor-pointer uppercase tracking-widest">Design</span>
+<span class="bg-surface-container-high px-4 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:bg-primary hover:text-on-primary transition-colors cursor-pointer uppercase tracking-widest">Mindfulness</span>
+<span class="bg-surface-container-high px-4 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:bg-primary hover:text-on-primary transition-colors cursor-pointer uppercase tracking-widest">Architecture</span>
+</div>
+</footer>
+</article>
+<section class="max-w-container-max mx-auto px-margin-desktop mt-section-gap">
+<div class="flex justify-between items-end mb-12">
+<h2 class="font-headline-lg text-headline-lg text-primary">Related Reflections</h2>
+<a class="text-secondary font-label-md text-label-md flex items-center gap-2 hover:gap-3 transition-all" href="#">View all blogs <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group cursor-pointer">
+<div class="aspect-video overflow-hidden rounded-xl mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A misty morning landscape with a lone figure standing on a wooden pier overlooking a glass-like lake. The colors are muted blues and grays, with a soft golden light breaking through the fog in the distance. The mood is contemplative and peaceful, echoing the themes of reflection and intentionality in a premium editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJoJzhXLF_yRcOpfH7LBcA58q-vXFYiXNsgN2KJTi8SEkmMZrj81drjp9ANhVxV6tUidiCl_WXqxYuH0yctMEKjaJKjrAL370QfmAQTX61tGLfgzJGiQywPQVb75pneqp_izQoZVvMzio9XJ4rE-i4P5A16I5NP3T8sK7_5e6hiGy82c6EfkJ9h3EPH9s2ON4jZeB_A3lLBCrpkfMFcggjyqoi7_hHs7dT38oXJYniWVD7cVSKYwlbTkVGYkNAYjQIAb4GlhHevw"/>
+</div>
+<p class="font-label-sm text-label-sm text-secondary mb-2 uppercase tracking-tighter">Daily Blogs</p>
+<h3 class="font-headline-md text-headline-md text-primary group-hover:text-secondary transition-colors line-clamp-2">Finding Focus in a Fragmented World</h3>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-video overflow-hidden rounded-xl mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sunlight filtering through a dense forest canopy, creating god rays that illuminate a mossy path. The atmosphere is ethereal and lush, with deep greens and bright highlights. The image captures a moment of natural wonder and quiet introspection, fitting for an editorial piece on nature and mindfulness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjpABQYCtYN6BLodCWo_wGoxyfLlo1OPI3To_opnFv98r8puyZ6Jf_DECYwcGXuc_Wff6PlWLDkU4vjC16YO65pVeHad6qjotQU-Dz5T_Clw5s73iEiNFKUFCb9FoooN27HW0KxePjW3wvSjZQf_ga3uOuDyKesDEE3vNYTBGre17kcRDsEJ_1qJvmnzgGz1bP93tKVl9jGI0UVTYZA38kgz38tLlvsfyfXIn3gd1KIQTEpMFrwCitcA_V63aE4e_8DZARBQeTJQ"/>
+</div>
+<p class="font-label-sm text-label-sm text-secondary mb-2 uppercase tracking-tighter">Weekly Blogs</p>
+<h3 class="font-headline-md text-headline-md text-primary group-hover:text-secondary transition-colors line-clamp-2">Nature's Own Design Language</h3>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-video overflow-hidden rounded-xl mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A minimalist architectural detail showing the intersection of two white concrete planes against a clear blue sky. A sharp shadow divides the composition diagonally. The style is geometric, clean, and modern, emphasizing the play between light and form in a minimalist, premium aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWelhNaLi2tfB0n3vLIToN5GxFqAPTquPrTV-9UnSHr3neZ2NbgADSvfff2fExXlFKYRNP2eHJaz8r1EAfteELQlDlH0v2MiWXOUehXBF9ZcQYclNRArQRYgUwKkQbfx5CuI1wVmcOqKTjm5fQzUdpAdqxpUtzEA0fLQOhp5j30nB7kzE9D57X8L7EfpcHY30lIIICG-geKIJF0EIaNrIT2aHnEbzHb9cTSm0CYjkACh9J2-h6GgdLQzWEN761483WXb6OFLyWgA"/>
+</div>
+<p class="font-label-sm text-label-sm text-secondary mb-2 uppercase tracking-tighter">Daily Blogs</p>
+<h3 class="font-headline-md text-headline-md text-primary group-hover:text-secondary transition-colors line-clamp-2">The Ethics of Aesthetic Simplicity</h3>
+</div>
+</div>
+</section>
+<section class="max-w-[720px] mx-auto px-margin-mobile md:px-0 mt-section-gap">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-12">Conversations</h2>
+<div class="space-y-12 mb-16">
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex-shrink-0 flex items-center justify-center font-headline-md text-primary-container">E</div>
+<div>
+<div class="flex items-center gap-3 mb-2">
+<span class="font-label-md text-label-md text-primary">Elena Rossi</span>
+<span class="text-on-surface-variant text-sm font-label-sm">• 2 days ago</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">This article perfectly captures the feeling I had while visiting the Zumthor's Therme Vals. The way light and shadow are used as building materials themselves is something that truly changes your perspective on architecture.</p>
+<button class="mt-4 text-secondary font-label-sm text-label-sm uppercase tracking-widest hover:underline">Reply</button>
+</div>
+</div>
+<div class="flex gap-4 ml-12">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex-shrink-0 flex items-center justify-center font-headline-md text-primary-container">M</div>
+<div>
+<div class="flex items-center gap-3 mb-2">
+<span class="font-label-md text-label-md text-primary">Marcus Chen</span>
+<span class="text-on-surface-variant text-sm font-label-sm">• 1 day ago</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">I often find that modern architecture tries too hard to be loud. It’s refreshing to see a focus on the quiet moments. Great read, Naman.</p>
+<button class="mt-4 text-secondary font-label-sm text-label-sm uppercase tracking-widest hover:underline">Reply</button>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/20">
+<h3 class="font-headline-md text-headline-md text-primary mb-6">Leave a Comment</h3>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Name</label>
+<input class="bg-surface-container-low border-b border-outline-variant focus:border-primary focus:ring-0 transition-all py-3 px-4 outline-none rounded-t-lg" placeholder="Your Name" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Email</label>
+<input class="bg-surface-container-low border-b border-outline-variant focus:border-primary focus:ring-0 transition-all py-3 px-4 outline-none rounded-t-lg" placeholder="Your Email" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Comment</label>
+<textarea class="bg-surface-container-low border-b border-outline-variant focus:border-primary focus:ring-0 transition-all py-3 px-4 outline-none rounded-t-lg resize-none" placeholder="Share your thoughts..." rows="5"></textarea>
+</div>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-lg font-label-md text-label-md hover:opacity-90 transition-all w-full md:w-auto" type="submit">Post Comment</button>
+</form>
+</div>
+</section>
+</main>
+<footer class="w-full py-16 px-margin-desktop flex flex-col md:flex-row justify-between items-start gap-stack-gap bg-surface-container-low dark:bg-surface-container-highest">
+<div class="space-y-6 max-w-sm">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-on-background">Naman Garg</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Exploring the intersection of design, philosophy, and personal growth through weekly reflections and daily thoughts.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-lg">brand_awareness</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+<div class="flex flex-col gap-4">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-2">Navigation</span>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">About</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-2">Writing</span>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Daily Blogs</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Weekly Blogs</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Newsletter</a>
+</div>
+<div class="flex flex-col gap-4 col-span-2 md:col-span-1">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-2">Legal</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">© 2024 Naman Garg. All rights reserved.</p>
+<a class="font-label-sm text-label-sm text-on-surface-variant underline decoration-secondary decoration-2" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Newsreader:opsz,wght@6..72,400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#3d4756",
+                    "error-container": "#ffdad6",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#848484",
+                    "background": "#f8f9fa",
+                    "on-tertiary-container": "#7a8495",
+                    "surface-dim": "#d9dadb",
+                    "primary-fixed": "#e2e2e2",
+                    "surface-bright": "#f8f9fa",
+                    "outline-variant": "#cfc4c5",
+                    "error": "#ba1a1a",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed-variant": "#474747",
+                    "inverse-surface": "#2e3132",
+                    "surface-container": "#edeeef",
+                    "tertiary-fixed-dim": "#bdc7d9",
+                    "outline": "#7e7576",
+                    "surface": "#f8f9fa",
+                    "surface-variant": "#e1e3e4",
+                    "tertiary": "#000000",
+                    "surface-container-low": "#f3f4f5",
+                    "on-surface-variant": "#4c4546",
+                    "secondary": "#7a5900",
+                    "on-primary-fixed": "#1b1b1b",
+                    "tertiary-fixed": "#d9e3f6",
+                    "on-background": "#191c1d",
+                    "primary": "#000000",
+                    "on-tertiary-fixed": "#121c2a",
+                    "on-surface": "#191c1d",
+                    "on-secondary-container": "#6f5100",
+                    "secondary-fixed": "#ffdea1",
+                    "primary-fixed-dim": "#c6c6c6",
+                    "inverse-on-surface": "#f0f1f2",
+                    "on-secondary-fixed": "#261900",
+                    "surface-container-high": "#e7e8e9",
+                    "primary-container": "#1b1b1b",
+                    "surface-container-highest": "#e1e3e4",
+                    "tertiary-container": "#121c2a",
+                    "inverse-primary": "#c6c6c6",
+                    "surface-tint": "#5e5e5e",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed-variant": "#5c4300",
+                    "secondary-container": "#ffc334",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#f9bd2e",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin-desktop": "40px",
+                    "section-gap": "8rem",
+                    "margin-mobile": "20px",
+                    "stack-gap": "1.5rem",
+                    "container-max": "1120px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Manrope"],
+                    "body-md": ["Newsreader"],
+                    "body-lg": ["Newsreader"],
+                    "headline-md": ["Manrope"],
+                    "headline-lg-mobile": ["Manrope"],
+                    "label-sm": ["Inter"],
+                    "headline-xl": ["Manrope"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-md": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #f8f9fa; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .blog-card-shadow {
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.03);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .blog-card-shadow:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.05);
+        }
+        .underline-accent {
+            background-image: linear-gradient(to right, #ECB221 0%, #ECB221 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 2px;
+            background-position: 0 100%;
+            transition: background-size 0.3s;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-background">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface dark:bg-background h-20 px-margin-desktop">
+<div class="max-w-container-max mx-auto h-full flex justify-between items-center">
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-on-background" href="/">
+                Naman Garg
+            </a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 font-label-md text-label-md" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 font-label-md text-label-md" href="#">About</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 font-label-md text-label-md" href="#">Services</a>
+<a class="text-primary dark:text-on-background font-bold border-b-2 border-secondary font-label-md text-label-md" href="#">Daily Blogs</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 font-label-md text-label-md" href="#">Weekly Blogs</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 font-label-md text-label-md" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface-variant p-2 hover:bg-surface-container-low rounded-full transition-colors">search</button>
+<button class="hidden md:block bg-primary text-on-primary font-label-md text-label-md px-6 py-2 rounded-lg hover:opacity-90 active:scale-95 transition-all">
+                    Categories
+                </button>
+</div>
+</div>
+</header>
+<main class="pt-32 pb-section-gap max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Header Section -->
+<div class="mb-16 max-w-[720px]">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary mb-4 block">Archive</span>
+<h1 class="font-headline-xl text-headline-xl text-primary mb-6">Daily Blogs</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant italic">
+                A canvas for everyday reflections, quiet observations, and the subtle textures of a life lived intentionally.
+            </p>
+</div>
+<!-- Blog Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Blog Card 1 -->
+<article class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl overflow-hidden blog-card-shadow flex flex-col">
+<div class="aspect-video relative overflow-hidden">
+<img alt="Reflections" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="A serene morning desk setup with a journal, a black coffee cup, and soft sunlight filtering through a window. The aesthetic is clean and minimalist, featuring a soft gray palette with warm highlights, capturing a quiet editorial mood for personal reflection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCltKuLa93vE7Pi8vjqnQsrzMLg8DUVzDY5DgVxAFDU9rxNWR6N_N2GhYHNtZjhuCXf7Y5cbT8eBUHpDti9YwT0d8T288hmZmfzREtn0k8nM8mCZZ8E2Y22JFmflLyZPx888p6fCsvJvldN7yknbGD0n5LE-m5uUumQyFAXbrv9sewWylZvnTXtGvWPWwfaWcwMkspdXk-ITshntdddhPO2TTcW0bvhADqFB8NCXAYbqSF4Wr-8RJ8vSGhZNVgh3AG0S28xCQayCg"/>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<div class="flex items-center gap-3 mb-4">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary/70">MINIMALISM</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<time class="font-label-sm text-label-sm text-on-surface-variant/60">OCT 24, 2024</time>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-4 leading-snug">The Architecture of Silence</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 line-clamp-3">
+                        How carving out moments of absolute stillness can reshape our perspective on productivity and creative clarity in a noisy world.
+                    </p>
+<div class="mt-auto pt-6 border-t border-outline-variant/20">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-bold hover:gap-3 transition-all group" href="#">
+                            Read More 
+                            <span class="material-symbols-outlined text-[18px] group-hover:text-secondary">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Blog Card 2 -->
+<article class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl overflow-hidden blog-card-shadow flex flex-col">
+<div class="aspect-video relative overflow-hidden">
+<img alt="Craftsmanship" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Close-up of high-quality fountain pen nib resting on a textured cream paper. The lighting is moody and focused, highlighting the premium craftsmanship. The background is a soft-focus office interior with deep black and warm wood tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh5sFQo3yQFTB6D4OErI0Shczt2Pp7msPZPC_GVJHryn5sHRQZ34sOwdmmZd8CL8Ue9JfTkY0oj-z52dZsEnsLnYbR73nq7IPrxcn-cerNNASGcMYA3NVQ4qR9bZ52xlrdda1BnMWNgccQ27MJUBW3zPZzKILYhXK0AHmCmTP7S3jir26bEdXbl2taZrIVLnn-bOdYtIPJ-GchZc_mK2lMT9qmRuzQQKITA-DGc7RxJZpvNUFYw5UJ3CvGl4wujtDj0fUZFYL62g"/>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<div class="flex items-center gap-3 mb-4">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary/70">PHILOSOPHY</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<time class="font-label-sm text-label-sm text-on-surface-variant/60">OCT 23, 2024</time>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-4 leading-snug">The Value of the Analog</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 line-clamp-3">
+                        Why physical paper and ink remain the most sophisticated technology for deep thinking and long-term memory retention.
+                    </p>
+<div class="mt-auto pt-6 border-t border-outline-variant/20">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-bold hover:gap-3 transition-all group" href="#">
+                            Read More 
+                            <span class="material-symbols-outlined text-[18px] group-hover:text-secondary">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Blog Card 3 -->
+<article class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl overflow-hidden blog-card-shadow flex flex-col">
+<div class="aspect-video relative overflow-hidden">
+<img alt="Design" class="w-full h-full object-crop transition-transform duration-700 hover:scale-105" data-alt="A minimalist architectural detail of a concrete wall meeting a clear blue sky. A single branch of an olive tree casts a soft shadow on the texture. The image is bright, airy, and high-key, emphasizing negative space and quiet aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDq-bdRPSWjBLbVeH99yqYi8k6q92Nbaj_rr1oR3gqFWLU5FVPN3D3mI3ebjtBQyGQzksI0QZyLZWGt4j9boQjCbMESC7NG1WL8luiviMXWGCDAKorBsdJupSnlKoGTqOeOe0lCedv0Rmrj8m9MgAfpJL3L5fuJw7NE7BLyhDegDCYnh_DfMhFWZ5ONG5VdTHqmaPIt6xKZ2WG_om9641jWQCrNH5O12TFyciha3d9-0kh2hRohA7MbhV_wzFM-HO2JoXUQSzbZMg"/>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<div class="flex items-center gap-3 mb-4">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary/70">DESIGN</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<time class="font-label-sm text-label-sm text-on-surface-variant/60">OCT 22, 2024</time>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-4 leading-snug">Design as Intentionality</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 line-clamp-3">
+                        Exploring how the objects we surround ourselves with influence the quality of our focus and daily emotional wellbeing.
+                    </p>
+<div class="mt-auto pt-6 border-t border-outline-variant/20">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-bold hover:gap-3 transition-all group" href="#">
+                            Read More 
+                            <span class="material-symbols-outlined text-[18px] group-hover:text-secondary">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Blog Card 4 -->
+<article class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl overflow-hidden blog-card-shadow flex flex-col">
+<div class="aspect-video relative overflow-hidden">
+<img alt="Style" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="A high-end editorial shot of a singular white ceramic vase on a black marble surface. Soft rim lighting creates a halo effect. The composition is starkly minimalist, focusing on form and shadow within a premium lifestyle setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmB9mCejlxkuaQIhhYUDc6g-yC-khv7MQHlMtv_yq153cnbIC9uKd_eEaGA2ibd5t3m_CCP9Hi6kb-FAhi1ON_whcb9FEkiU21NBj3-XeAd2A7KTD6YI9uOFfCiv8rGybbL5-TkTEAfK7X-RJZjs9qSULksRGqVH18C_Z0GnsFm0VE5x3ODGJ_q3RrTgLozbv6hFclt_6p0CCzcwZduFL3hWgqvx7VNMlcnFCBZEeBEYS-opQyN3HmGWVv3OXYTy3j20vfuBaDig"/>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<div class="flex items-center gap-3 mb-4">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary/70">LIFESTYLE</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<time class="font-label-sm text-label-sm text-on-surface-variant/60">OCT 21, 2024</time>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-4 leading-snug">Curated Belonging</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 line-clamp-3">
+                        The art of editing one's life to only include the meaningful, the beautiful, and the essential.
+                    </p>
+<div class="mt-auto pt-6 border-t border-outline-variant/20">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-bold hover:gap-3 transition-all group" href="#">
+                            Read More 
+                            <span class="material-symbols-outlined text-[18px] group-hover:text-secondary">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Blog Card 5 -->
+<article class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl overflow-hidden blog-card-shadow flex flex-col">
+<div class="aspect-video relative overflow-hidden">
+<img alt="Thoughts" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="An abstract photo of layered sheer fabrics in neutral tones blowing in a gentle breeze. The lighting is soft and ethereal, creating a sense of calm and movement. The color palette consists of whites, creams, and light tans." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBny4M2X2CwnwJRHJD20HsfyJLzXj72UutIM1YC7f2QN7idL21X0JAMdAWzj7ar6QJOPdSWf7id7RHJT2hJpsQiOHIx68eGJbHD0_lPCczrji74MlL9Bo4XFzXC-wlpddxeSloBS0p-_IyaDVQuLNRX-JneKkFSdCSavaAqIqetWKKdpBOOW58duzraNHf4baOfTWIaJCi86A6ZFlou0aBMDdeMdSrazm4C06OPOWnPI-XLb3xouicDWNuoqhdr7JuVgHdEfEdMxQ"/>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<div class="flex items-center gap-3 mb-4">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary/70">REFLECTION</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<time class="font-label-sm text-label-sm text-on-surface-variant/60">OCT 20, 2024</time>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-4 leading-snug">Gentle Rhythms</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 line-clamp-3">
+                        Developing a daily cadence that respects energy levels over artificial deadlines.
+                    </p>
+<div class="mt-auto pt-6 border-t border-outline-variant/20">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-bold hover:gap-3 transition-all group" href="#">
+                            Read More 
+                            <span class="material-symbols-outlined text-[18px] group-hover:text-secondary">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Blog Card 6 -->
+<article class="bg-surface-container-lowest border border-outline-variant/30 rounded-xl overflow-hidden blog-card-shadow flex flex-col">
+<div class="aspect-video relative overflow-hidden">
+<img alt="Solitude" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="A wide, cinematic shot of a misty mountain range at dawn. The colors are muted, dominated by cool blues and soft greys. A single, small light from a cabin is visible in the distance, conveying solitude and a premium, peaceful atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBelyPMlsdqK6yYi33Mbn72DaaSLLw1ymUMdhTwyUoBVzyk1tMLFCRNIbrqCTq8cMfyXu62CSQ7Ec-mlUEQ7IuclK4OEZKzifJefovTu9qyQvUHYtIO3P8ViYEftSPKlpChL5By8nzmb3_fGjoSn4ZwIJxvTcx0pn-iOSqMMN1bdI6Ik2Inz1wlaBhQgHnx8F07o71KfdMbfkVlPVRz__-ypFBQw-1tHxavbUgL3myMf0IMpGuwQrhF3gwtFDSr40DYQ-IWpKl-QQ"/>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<div class="flex items-center gap-3 mb-4">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary/70">TRAVEL</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<time class="font-label-sm text-label-sm text-on-surface-variant/60">OCT 19, 2024</time>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mb-4 leading-snug">The Luxury of Solitude</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 line-clamp-3">
+                        Rediscovering the profound richness found in traveling alone and the self-discovery it necessitates.
+                    </p>
+<div class="mt-auto pt-6 border-t border-outline-variant/20">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-bold hover:gap-3 transition-all group" href="#">
+                            Read More 
+                            <span class="material-symbols-outlined text-[18px] group-hover:text-secondary">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+<!-- Pagination -->
+<div class="mt-20 flex justify-center items-center gap-4">
+<button class="w-12 h-12 flex items-center justify-center rounded-full border border-outline-variant text-primary hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<span class="font-label-md text-label-md text-primary">1</span>
+<span class="font-label-md text-label-md text-on-surface-variant/40">2</span>
+<span class="font-label-md text-label-md text-on-surface-variant/40">3</span>
+<button class="w-12 h-12 flex items-center justify-center rounded-full border border-outline-variant text-primary hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</main>
+<!-- Signature Component Section -->
+<section class="bg-surface py-24 border-y border-outline-variant/10">
+<div class="max-w-[720px] mx-auto text-center px-margin-mobile">
+<span class="material-symbols-outlined text-secondary text-5xl mb-8 block" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<h3 class="font-body-lg text-headline-md italic text-primary leading-relaxed mb-8">
+                "Have you ever felt like the world is moving too fast for you to notice the beauty in the mundane?"
+            </h3>
+<p class="font-label-md text-label-md uppercase tracking-[0.2em] text-on-surface-variant/60">— NAMAN GARG</p>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-16 px-margin-desktop bg-surface-container-low dark:bg-surface-container-highest">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start gap-stack-gap">
+<div class="max-w-xs">
+<h2 class="font-headline-md text-headline-md font-bold text-primary dark:text-on-background mb-6">Naman Garg</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                    Curated thoughts on minimalism, design, and the art of intentional living.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:border-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">alternate_email</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:border-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">rss_feed</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-16">
+<div class="flex flex-col gap-4">
+<span class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider">Navigation</span>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-primary transition-colors font-label-sm text-label-sm" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-primary transition-colors font-label-sm text-label-sm" href="#">About</a>
+<a class="text-secondary dark:text-secondary-fixed font-semibold font-label-sm text-label-sm active underline decoration-secondary decoration-2" href="#">Daily Blogs</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-primary transition-colors font-label-sm text-label-sm" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider">Services</span>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-primary transition-colors font-label-sm text-label-sm" href="#">Consulting</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-primary transition-colors font-label-sm text-label-sm" href="#">Editorial</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container font-medium hover:text-primary transition-colors font-label-sm text-label-sm" href="#">Speaking</a>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto mt-16 pt-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-label-sm text-label-sm text-on-surface-variant/60">© 2024 Naman Garg. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="font-label-sm text-label-sm text-on-surface-variant/60 hover:text-primary" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant/60 hover:text-primary" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

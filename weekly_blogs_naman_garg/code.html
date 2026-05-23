@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;family=Newsreader:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#3d4756",
+                        "error-container": "#ffdad6",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#848484",
+                        "background": "#f8f9fa",
+                        "on-tertiary-container": "#7a8495",
+                        "surface-dim": "#d9dadb",
+                        "primary-fixed": "#e2e2e2",
+                        "surface-bright": "#f8f9fa",
+                        "outline-variant": "#cfc4c5",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#474747",
+                        "inverse-surface": "#2e3132",
+                        "surface-container": "#edeeef",
+                        "tertiary-fixed-dim": "#bdc7d9",
+                        "outline": "#7e7576",
+                        "surface": "#f8f9fa",
+                        "surface-variant": "#e1e3e4",
+                        "tertiary": "#000000",
+                        "surface-container-low": "#f3f4f5",
+                        "on-surface-variant": "#4c4546",
+                        "secondary": "#7a5900",
+                        "on-primary-fixed": "#1b1b1b",
+                        "tertiary-fixed": "#d9e3f6",
+                        "on-background": "#191c1d",
+                        "primary": "#000000",
+                        "on-tertiary-fixed": "#121c2a",
+                        "on-surface": "#191c1d",
+                        "on-secondary-container": "#6f5100",
+                        "secondary-fixed": "#ffdea1",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-secondary-fixed": "#261900",
+                        "surface-container-high": "#e7e8e9",
+                        "primary-container": "#1b1b1b",
+                        "surface-container-highest": "#e1e3e4",
+                        "tertiary-container": "#121c2a",
+                        "inverse-primary": "#c6c6c6",
+                        "surface-tint": "#5e5e5e",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "secondary-container": "#ffc334",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#f9bd2e",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-desktop": "40px",
+                        "section-gap": "8rem",
+                        "margin-mobile": "20px",
+                        "stack-gap": "1.5rem",
+                        "container-max": "1120px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Manrope"],
+                        "body-md": ["Newsreader"],
+                        "body-lg": ["Newsreader"],
+                        "headline-md": ["Manrope"],
+                        "headline-lg-mobile": ["Manrope"],
+                        "label-sm": ["Inter"],
+                        "headline-xl": ["Manrope"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-md": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .ambient-shadow {
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
+        }
+        .ambient-shadow:hover {
+            box-shadow: 0 12px 48px rgba(0, 0, 0, 0.08);
+        }
+        .signature-quote::before {
+            content: '"';
+            font-family: 'Newsreader', serif;
+            font-size: 120px;
+            color: #7a5900;
+            opacity: 0.3;
+            position: absolute;
+            top: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            line-height: 1;
+        }
+        .editorial-underline {
+            background-image: linear-gradient(to right, #ECB221 0%, #ECB221 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 2px;
+            background-position: 0 95%;
+            transition: background-size 0.3s ease;
+        }
+        .editorial-underline:hover {
+            background-size: 100% 4px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-secondary-fixed">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface flex justify-between items-center px-margin-desktop h-20 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary">
+            Naman Garg
+        </div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 font-label-md text-label-md" href="#">Home</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 font-label-md text-label-md" href="#">About</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 font-label-md text-label-md" href="#">Services</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 font-label-md text-label-md" href="#">Daily Blogs</a>
+<a class="text-primary font-bold border-b-2 border-secondary font-label-md text-label-md" href="#">Weekly Blogs</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 font-label-md text-label-md" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">search</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:opacity-90 transition-all active:scale-95">
+                Categories
+            </button>
+</div>
+</header>
+<main class="pt-32 pb-section-gap max-w-container-max mx-auto px-margin-desktop">
+<!-- Hero Section -->
+<section class="mb-24 flex flex-col items-center text-center">
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-secondary mb-6 block">Weekly Reflections</span>
+<h1 class="font-headline-xl text-headline-xl text-primary max-w-[800px] mb-8">
+                Slow thoughts for a fast world.
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-[640px] leading-relaxed italic">
+                A weekly compilation of observations, quiet realisations, and the occasional question that refuses to be answered.
+            </p>
+</section>
+<!-- Signature Quote Component -->
+<section class="relative py-24 mb-32 border-y border-outline-variant/30 text-center">
+<div class="signature-quote relative pt-12">
+<h2 class="font-headline-lg text-headline-lg italic font-normal text-on-surface-variant max-w-[720px] mx-auto">
+                    "Have you ever felt like the world is moving too fast for your thoughts to catch up?"
+                </h2>
+<div class="mt-8 flex items-center justify-center gap-4">
+<div class="h-px w-8 bg-outline-variant"></div>
+<span class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant">Reflection Series #42</span>
+<div class="h-px w-8 bg-outline-variant"></div>
+</div>
+</div>
+</section>
+<!-- Weekly Blog Grid -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-12">
+<!-- Featured Card (Asymmetric Layout) -->
+<article class="md:col-span-8 flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant/20 ambient-shadow group cursor-pointer">
+<div class="aspect-[16/9] overflow-hidden">
+<img alt="Open journal on desk" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A cinematic, high-key photograph of an open linen-bound journal resting on a clean white oak desk. Soft morning light spills across the pages from a nearby window, casting long, gentle shadows. Beside the journal sits a minimalist matte black fountain pen and a single ceramic cup of tea. The overall aesthetic is peaceful, intentional, and editorial, reflecting a premium minimalist lifestyle with a focus on deep reflection and calm productivity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWWwY9hPqRk0r4YlpCJbXTOs_ayf3PdDSIYUheM9hQtPs115P6gG_sdtdPiAN85w3LbXpWvkwpc6eh3UoY3TjaYjWgjevXBrYGLB6F7WNFhJnyTluGHHNHD7o8UUod51dgaZryjJykI7TbF2OOh4ory9ERlkOihv98rWegauM459ODDEuNBpqGIwraP4ORKkPJVMKImtGSuMgCwGpTJ6G4zWo8E_Y46TjZEvYB18VaXfz0eh-bKqjZ5V5dMGC6Jo19iARoOc2IHg"/>
+</div>
+<div class="p-10">
+<div class="flex items-center gap-4 mb-6">
+<span class="font-label-sm text-label-sm uppercase tracking-wider bg-surface-container-high px-3 py-1 rounded text-secondary-container bg-opacity-10 text-secondary">Philosophy</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 14 — Oct 21, 2024</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4 group-hover:text-secondary transition-colors">The Art of Deliberate Silence</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-[640px]">
+                        In a culture that demands constant commentary, choosing not to speak is a radical act of preservation. This week, I explored what happens when we let ideas breathe before they are packaged for consumption...
+                    </p>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-bold group" href="#">
+                        Read More
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Sidebar / Secondary Card -->
+<article class="md:col-span-4 flex flex-col bg-surface-container-lowest rounded-xl border border-outline-variant/20 ambient-shadow p-8 group cursor-pointer h-full">
+<div class="flex items-center gap-4 mb-6">
+<span class="font-label-sm text-label-sm uppercase tracking-wider bg-surface-container-high px-3 py-1 rounded text-secondary">Reflection</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 07 — Oct 13</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4 group-hover:text-secondary transition-colors">Why We Fear Unstructured Time</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                    An examination of the anxiety that arises when the calendar clears and the self is all that remains.
+                </p>
+<div class="mt-auto pt-8 border-t border-outline-variant/20">
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/60">Psychology</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/60">Productivity</span>
+</div>
+<a class="font-label-md text-label-md text-primary font-bold border-b-2 border-secondary/30 hover:border-secondary transition-all" href="#">Read Full Entry</a>
+</div>
+</article>
+<!-- Grid Items -->
+<article class="md:col-span-6 flex flex-col bg-surface-container-lowest rounded-xl border border-outline-variant/20 ambient-shadow group cursor-pointer">
+<div class="aspect-[4/3] overflow-hidden rounded-t-xl">
+<img alt="Foggy mountains" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A serene landscape photograph featuring rolling mountain ridges shrouded in a thick, ethereal mist at dawn. The color palette is monochromatic and muted, dominated by cool grays and soft whites. The composition is minimalist and balanced, evoking a sense of solitude and quiet introspection. The lighting is diffused and atmospheric, perfectly capturing the calm and reflective tone of a high-end editorial blog." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQVghfj9CN0BJda7ycm9QdXzkfIUyVv74QXeoAKI6AVvu4mh9sLuJMUV53lA-a5kUGGVRZb0r9Nig64isC7Wo9VKWTxcl-gsiM8Uy_f8gA5BMym1yLk8PUon1MZIFtWxYzIOdCXMwb9uR70nEVq419geCNzBFU94Ou_DySXwIucDK-8_T8aXaOVtwYlaB6A_3WUcaksOmoHKXdY2qWXRgoQzJp2hloXQKa2n_S_theAEwQpn354THCgs3T8x6bkvsqese2k4GAZg"/>
+</div>
+<div class="p-8">
+<div class="flex items-center gap-4 mb-4">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sept 30 — Oct 06</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Clarity in the Gray Space</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        The most important decisions aren't black and white. They live in the nuanced grays we often try to ignore.
+                    </p>
+<a class="font-label-md text-label-md text-primary font-bold inline-flex items-center gap-2 group" href="#">
+                        Explore entry
+                        <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<article class="md:col-span-6 flex flex-col bg-surface-container-lowest rounded-xl border border-outline-variant/20 ambient-shadow group cursor-pointer">
+<div class="aspect-[4/3] overflow-hidden rounded-t-xl">
+<img alt="Sunset over water" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="An abstract, minimalist capture of golden sunset reflections on calm water ripples. The light is warm and honey-toned, creating a brilliant contrast against deep, velvety black shadows. The focus is soft and painterly, emphasizing texture and mood over literal subject matter. This visual represents a moment of transition and quiet beauty, aligning with a premium editorial design language focused on reflection and high-quality craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAjB0OtTAJ5aHhgcKQzbSXUFkcntLkIq13DrQwNawBje4e-nuD9KcXtvbwpW3aqRwN2Zl_167B8s3vDpK3UGJxqcXtrBWXTw4vIa-pmaR4ukgY0DydXzE7H7CPaso0FTEBlo98z42rVbvG1863jhemQkGgs8hwOHtti6Ro2-HXX9GVtrFzMJxtvunRcjjx0EGSIjyE7fzHoy-6CI-CGGDOSJbub7h6Bp9apGSaUEsi2qZ_0eIoJm8wYo3ECnzmyNrcUTIrbCOmvg"/>
+</div>
+<div class="p-8">
+<div class="flex items-center gap-4 mb-4">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sept 23 — Sept 29</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">The Beauty of Transience</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        Lessons from a week spent noticing things that don't last, and why that makes them infinitely more valuable.
+                    </p>
+<a class="font-label-md text-label-md text-primary font-bold inline-flex items-center gap-2 group" href="#">
+                        Explore entry
+                        <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+</section>
+<!-- Pagination -->
+<div class="mt-24 flex justify-center items-center gap-4">
+<button class="h-12 w-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<span class="font-label-md text-label-md text-primary font-bold px-4">Page 1 of 12</span>
+<button class="h-12 w-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-margin-desktop flex flex-col md:flex-row justify-between items-start gap-stack-gap bg-surface-container-low border-t border-outline-variant/10">
+<div class="flex flex-col gap-6">
+<div class="font-headline-md text-headline-md font-bold text-primary">
+                Naman Garg
+            </div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+                Writer, Designer, and Thinker. Exploring the intersections of technology, philosophy, and the human experience.
+            </p>
+<div class="font-label-sm text-label-sm text-on-surface-variant/60">
+                © 2024 Naman Garg. All rights reserved.
+            </div>
+</div>
+<div class="grid grid-cols-2 gap-x-16 gap-y-4">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Daily Blogs</a>
+<a class="text-secondary font-semibold font-label-md text-label-md underline decoration-secondary decoration-2" href="#">Weekly Blogs</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Stay Connected</span>
+<div class="flex gap-4">
+<a class="h-10 w-10 rounded-full bg-surface flex items-center justify-center border border-outline-variant/30 hover:border-secondary transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">alternate_email</span>
+</a>
+<a class="h-10 w-10 rounded-full bg-surface flex items-center justify-center border border-outline-variant/30 hover:border-secondary transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">link</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>
