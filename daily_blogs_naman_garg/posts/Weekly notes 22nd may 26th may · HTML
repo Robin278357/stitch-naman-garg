@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Weekly Notes 22nd May to 26th May | Naman Garg</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+body{font-family:'Newsreader',serif;background:#f8f9fa}
+h1,h2,h3,nav,header{font-family:'Manrope',sans-serif}
+.bc h2{font-size:1.5rem;font-weight:700;margin-top:2.5rem;margin-bottom:1rem;color:#191c1d;font-family:'Manrope',sans-serif}
+.bc h3{font-size:1.2rem;font-weight:600;margin-top:2rem;margin-bottom:.75rem;color:#191c1d;font-family:'Manrope',sans-serif}
+.bc p{margin-bottom:1.25rem;line-height:1.8;color:#4c4546;font-size:1.05rem}
+.bc blockquote{border-left:4px solid #ECB221;padding:1rem 1.5rem;background:#fdf9f0;margin:2rem 0;font-style:italic;border-radius:0 8px 8px 0}
+.bc blockquote p{margin-bottom:0}
+.bc img{max-width:100%;border-radius:12px;margin:1.5rem 0;height:auto}
+.bc ul{list-style:disc;padding-left:1.5rem;margin-bottom:1.25rem}
+.bc li{margin-bottom:.5rem;color:#4c4546;line-height:1.7}
+.bc hr{border:none;border-top:1px solid #e5e7eb;margin:2rem 0}
+.bc strong{color:#191c1d;font-weight:700}
+.bc em{font-style:italic}
+.bc a{color:#92400e;text-decoration:underline}
+</style>
+</head>
+<body>
+<header style="position:fixed;top:0;left:0;width:100%;z-index:50;background:white;border-bottom:1px solid #f3f4f5;height:80px;padding:0 40px;display:flex;align-items:center;justify-content:space-between">
+<a style="font-weight:700;font-size:1.25rem;font-family:Manrope;text-decoration:none;color:#191c1d" href="../../home_naman_garg/index.html">Naman Garg</a>
+<nav style="display:flex;gap:2rem">
+<a style="font-size:.875rem;font-weight:500;color:#6b7280;font-family:Manrope;text-decoration:none" href="../../home_naman_garg/index.html">Home</a>
+<a style="font-size:.875rem;font-weight:700;color:#92400e;border-bottom:2px solid #d97706;font-family:Manrope;text-decoration:none" href="../../daily_blogs_naman_garg/index.html">Daily Blogs</a>
+<a style="font-size:.875rem;font-weight:500;color:#6b7280;font-family:Manrope;text-decoration:none" href="../../contact_naman_garg/index.html">Contact</a>
+</nav>
+</header>
+<main style="padding-top:8rem;padding-bottom:6rem;padding-left:1.5rem;padding-right:1.5rem">
+<article style="max-width:42rem;margin:0 auto">
+<a href="../../daily_blogs_naman_garg/index.html" style="font-size:.875rem;color:#92400e;font-weight:600;text-transform:uppercase;letter-spacing:.1em;display:block;margin-bottom:2rem;font-family:Manrope;text-decoration:none">← Back to Blogs</a>
+<h1 style="font-size:2.5rem;font-weight:800;line-height:1.2;margin-bottom:1rem;font-family:Manrope">Weekly Notes 22nd May to 26th May</h1>
+<p style="font-size:.875rem;color:#9ca3af;text-transform:uppercase;letter-spacing:.1em;margin-bottom:3rem;font-family:Manrope">May 26, 2026</p>
+<div style="width:4rem;height:4px;background:#d97706;margin-bottom:3rem"></div>
+<div class="bc">
+
+<figure><img src="https://namangarg.in/wp-content/uploads/2026/05/image-23-1024x576.png" alt=""/></figure>
+
+<h2>🏋️ Health</h2>
+<p>Last week, I was extremely delayed in posting the blog because honestly, nothing inside me felt aligned. My head was heavy, my gut was messed up, my focus was broken, and I couldn't even sit properly to write. Every time I tried, it felt forced. It didn't feel like me.</p>
+<p>But this week felt a little better.</p>
+<p>Not fully healed.<br/>Not fully energetic.<br/>But at least functional enough to observe myself again.</p>
+<p>And that itself felt important.</p>
+<p>This week, one of the most surprising moments was finally getting my BMI and body composition checked properly. Right now, I'm around <strong>80.5 kg</strong> with roughly <strong>26% body fat</strong>, and technically, according to the reports, I'm still unhealthy. The craziest part was hearing that my body age is around <strong>36</strong>, which genuinely shocked me because mentally I feel active, but internally my body is still recovering from years of inconsistency.</p>
+<p>But there was also a positive side to that conversation.</p>
+<p>The person checking everything told me something important: If I've already managed to come this far from where I started, then consistency over the next three to four months can completely change my condition.</p>
+<p>And honestly? That gave me hope again.</p>
+<p>Because even though this week was lazy physically and I couldn't move around much, the larger graph is still moving forward.</p>
+<p>I ate homemade pasta this week, had ice cream after a very long time, and instead of feeling guilty, I simply observed it. That's another thing I'm slowly learning:</p>
+<blockquote><p>Health is not destroyed by one meal.<br/>Health is destroyed by repeated unconscious habits.</p></blockquote>
+<p>This week, my body demanded rest more than aggression.</p>
+<p>So instead of pretending to be hyper-productive, I accepted it.</p>
+<p>And next week, I'm going back to the gym again. Properly.</p>
+<p>The discipline will return.<br/>The routine will return.<br/>The energy will return.</p>
+<p>I know it will.</p>
+<hr/>
+
+<h2>💻 Work</h2>
+<p>This entire week was basically swallowed by work.</p>
+<p>Even the weekend disappeared into office work.</p>
+<p>No random adventures.<br/>No unnecessary bakchodi.<br/>No wandering around.<br/>No complete mental switch-off.</p>
+<p>Just work.</p>
+<p>And strangely, even though we completed the episode and finished major things, I couldn't emotionally feel the achievement.</p>
+<p>That's the weirdest part.</p>
+<p>Usually, when I complete something difficult, there's this internal excitement or relief that says: "Yeah, this was done by me."</p>
+<p>But this week? Nothing.</p>
+<p>It felt emotionally flat.</p>
+<p>And I think this was probably my lowest emotional week in the last nine months.</p>
+<p>Not because something disastrous happened. But because internally I felt disconnected from my own output.</p>
+<p>Still, this week taught me a lot about workplace psychology, culture, and people. I observed how different personalities function under pressure, how people communicate, how they hide emotions, how they react to friction, and honestly, I'm grateful that people around me speak clearly and honestly with me.</p>
+<p>No fake praise.<br/>No unnecessary politics.<br/>No fake image building.</p>
+<p>And that clarity matters a lot. Because understanding people is also part of growth. Not just understanding software, workflows, or projects.</p>
+<hr/>
+
+<h2>📖 Learning</h2>
+<p>This week's biggest learning was probably around acceptance again.</p>
+<p>Not the motivational type. The real type.</p>
+<p>The type where you simply acknowledge: "Okay, this week is not my strongest version." And instead of creating fake positivity around it, you quietly move through it.</p>
+<p>I also spent time learning <strong>Claude</strong> deeply this week, and honestly, I'm planning to shift my blog writing process from ChatGPT to Claude for some parts because I want to experiment with different flows and systems around writing.</p>
+<p>That realization itself made me excited again. Even during a low week, I was still learning something. And maybe that's important.</p>
+<p>I also read parts of <strong>Paul Graham's Silicon Valley thoughts and essays</strong>, and even though I couldn't consume too much content this week mentally, those small readings reminded me how important clear thinking is.</p>
+<p>Not loud thinking. Clear thinking.</p>
+<hr/>
+
+<h2>☕ Small Wins</h2>
+<p>Even during one of the lowest weeks emotionally, there were still tiny beautiful moments. And I think those moments matter more during difficult phases.</p>
+<p>This week, I planted trees.</p>
+<p>And honestly, the weather itself felt beautiful.</p>
+<p>Cloudy skies.<br/>Good breeze.<br/>Soft surroundings.</p>
+<p>The world around me felt peaceful even when my body wasn't fully cooperating.</p>
+<p>And maybe that's life too.</p>
+<p>Sometimes your surroundings are beautiful while your internal state is cloudy.<br/>Sometimes the sky outside is clear while your mind feels heavy.</p>
+<p>And that's okay. Because clouds are temporary too.</p>
+<hr/>
+
+<h2>📚 A Line from a Book (and beyond)</h2>
+<blockquote><p>"Every day is a lesson. You learn something, and then you move on."</p></blockquote>
+<p>This week genuinely felt like that. Not every week needs to feel victorious. Some weeks simply teach endurance.</p>
+<hr/>
+
+<h2>🧠 Brain Refreshment</h2>
+<p>This week didn't have major brain refreshment moments because honestly, I couldn't scroll much, consume much, or even process too much information.</p>
+<p>But weirdly, silence itself became the refreshment.</p>
+<p>No overload.<br/>No overconsumption.<br/>No constant stimulation.</p>
+<p>Just existing quietly for a few days.</p>
+<p>And maybe my brain needed that more than motivation.</p>
+<hr/>
+
+<h2>🎶 A Song I'm Listening To</h2>
+<p><strong>Human Nature — Michael Jackson</strong></p>
+<hr/>
+
+<h2>💭 Closing Thoughts</h2>
+<p>I think this week taught me that not every phase of life is meant to feel powerful. Some phases are simply meant for recovery. And maybe I needed to stop fighting that reality.</p>
+<p>Because for the first time in many months, I genuinely felt slow.</p>
+<p>Not mentally ambitious.<br/>Not creatively explosive.<br/>Just… slow.</p>
+<p>But even inside that slowness, there was one beautiful realization:</p>
+<blockquote><p>The fact that I still care about returning means I haven't lost myself.</p></blockquote>
+<p>That matters. Because even during this low week:</p>
+<ul>
+<li>I still observed myself.</li>
+<li>I still reflected.</li>
+<li>I still wanted discipline back.</li>
+<li>I still wanted growth back.</li>
+</ul>
+<p>That means the fire is still there. It's just hidden behind clouds right now.</p>
+<p>And honestly? Clouds don't stay forever.</p>
+
+</div>
+</article>
+</main>
+<footer style="padding:2.5rem;background:#f9fafb;border-top:1px solid #f3f4f5;text-align:center">
+<p style="font-size:.875rem;color:#9ca3af">2024 Naman Garg. All rights reserved.</p>
+</footer>
+</body>
+</html>
